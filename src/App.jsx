@@ -2,7 +2,7 @@ import JobBoard from "./components/JobBoard";
 import "./App.css";
 import { useSelector } from "react-redux";
 import Filter from "./components/Filter";
-import coverImg from "../images/bg-header-desktop.svg";
+import coverImg from "./assets/bg-header-desktop.svg";
 
 function App() {
   const filterArr = useSelector((state) => state.jobPost.filterArr);
