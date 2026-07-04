@@ -31,7 +31,7 @@ export const fetchData = function () {
   return async (dispatch) => {
     try {
       console.log("executed");
-      const response = await fetch("../../data.json");
+      const response = await fetch("/data.json");
       const data = await response.json();
       if (!response.ok) throw new Error();
       dispatch(JobPostSlice.actions.replaceJobData(data));
